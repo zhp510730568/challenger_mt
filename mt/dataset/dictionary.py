@@ -185,11 +185,11 @@ if __name__ == '__main__':
             ChnSen=arr[3].strip()
             count+=1
             en_ids = vocab.en_doc_to_id(nltk.word_tokenize(EngSen))
-            print('input: ', EngSen)
-            print('en_ids: ', en_ids)
             EngSen=vocab.en_id_to_doc(en_ids)
-            print('de_ids', EngSen)
             ch_ids = vocab.ch_doc_to_id(ChnSen)
+            print('input: ', ChnSen)
+            print('ch_ids: ', ch_ids)
+            print('ch_sen: ', vocab.ch_id_to_doc(ch_ids))
             info = {'DocID': DocID, 'SenID': SenID, 'EngSen': en_ids, 'ChnSen': ch_ids}
             dataset_file.write('%s\n' % (json.dumps(info)))
             if count % 100000 == 0:

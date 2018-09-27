@@ -22,36 +22,39 @@ class MTDataset(object):
         if preprocess_path is None:
             raise ValueError('preprocess_path must not be None')
         self._preprocess_path = preprocess_path
+        if not isinstance(batch_size, int) or batch_size < 0 or batch_size > 100000:
+            raise ValueError('batch_size must be int type, and must be between 0 and 100000')
         self._batch_size=batch_size
         self._en_vocab_size=en_vocab_size
         self._ch_vocab_size=ch_vocab_size
         self._pickle_path=pickle_path
-
+        self._is_init=False
         self._vocabulary=Vocabulary(self._dataset_path, self._en_vocab_size, self._ch_vocab_size, self._pickle_path)
         if not os.path.exists(self._preprocess_path):
             self._preprocess()
 
-    def get_batch_op(self):
-        file_dataset = tf.data.TextLineDataset(self._preprocess_path)
+    def init(self, sess=None):
+        if self._is_init:
+            return
+        if sess is None or (not isinstance(sess, Session)):
+            raise ValueError('sess type is not correct')
+        sess.run(self.init_op.initializer)
+        self._is_init=True
 
+    def get_batch_op(self):
+        if not self._is_init:
+            raise ValueError('init must be called first')
+        file_dataset = tf.data.TextLineDataset(self._preprocess_path)
         file_dataset = file_dataset.shuffle(buffer_size=100) \
             .repeat() \
-            .map(map_func=lambda sentence: tf.py_func(map_fn, [sentence], tf.float32), num_parallel_calls=2) \
-            .batch(128) \
-            .prefetch(buffer_size=128 * 5)
-        init_op = file_dataset.make_initializable_iterator(shared_name='train_dataset')
+            .map(map_func=lambda sentence: tf.py_func(map_fn, [sentence], [tf.int32, tf.int32]), num_parallel_calls=6) \
+            .batch(self._batch_size) \
+            .prefetch(buffer_size=self._batch_size * 10)
+        self.init_op = file_dataset.make_initializable_iterator(shared_name='train_dataset')
 
-        next_batch = init_op.get_next()
+        ch_batch, en_batch = self.init_op.get_next()
 
-        with Session() as sess:
-            sess.run(init_op.initializer)
-            sess.run(tf.global_variables_initializer())
-            start_time = time.time()
-            for _ in range(1000):
-                batch = sess.run(next_batch)
-                print(batch.shape)
-            print('delay time: %d' % (time.time() - start_time))
-        print('call end')
+        return ch_batch, en_batch
 
     def _preprocess(self):
         count=0
@@ -75,8 +78,9 @@ class MTDataset(object):
 def map_fn(sentence):
     m = json.loads(sentence.decode(encoding = "utf-8"))
     arr =sequence.pad_sequences(np.array([m['ChnSen']]), maxlen=100, padding='post')
-    # print('shape: ', type(arr))
-    return arr[0].astype(np.float32)
+    arr1 = sequence.pad_sequences(np.array([m['EngSen']]), maxlen=100, padding='post')
+
+    return arr[0].astype(np.int32), arr1[0].astype(np.int32)
 
 
 if __name__=='__main__':
@@ -84,5 +88,16 @@ if __name__=='__main__':
     preprocess_path='../data/dataset.txt'
     pickle_path = '../pkl/tokens.pkl'
     dataset = MTDataset(dataset_path, 128, preprocess_path, en_vocab_size=50000, ch_vocab_size=8000, pickle_path=pickle_path)
-    dataset.get_batch_op()
+    ch_batch, en_batch=dataset.get_batch_op()
+    print('call end')
+
+    with Session() as sess:
+        dataset.init(sess=sess)
+        sess.run(tf.global_variables_initializer())
+        start_time = time.time()
+        for _ in range(1):
+            batch1, batch2 = sess.run([ch_batch, en_batch])
+            print(batch1)
+            print(batch2)
+        print('delay time: %d' % (time.time() - start_time))
     print('call end')
