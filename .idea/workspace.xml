@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5c814f8-1aae-43ed-8e55-4aba146469ba" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/dataset/data_statistics.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/dataset/t2t_dataset.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/model/datagen_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/model/inference_post.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/model/model_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/model/translate_enzh.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/model/translate_enzh_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/modules/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/modules/while_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/test/__init__.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/test/is_test.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/mt/test/test_preprocess.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/mt/__init__.py" afterPath="$PROJECT_DIR$/mt/__init__.py" />
       <change beforePath="$PROJECT_DIR$/mt/dataset/dictionary.py" afterPath="$PROJECT_DIR$/mt/dataset/dictionary.py" />
       <change beforePath="$PROJECT_DIR$/mt/dataset/mt_dataset.py" afterPath="$PROJECT_DIR$/mt/dataset/mt_dataset.py" />
-      <change beforePath="$PROJECT_DIR$/mt/model/dataset_test.py" afterPath="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" />
+      <change beforePath="$PROJECT_DIR$/mt/model/__init__.py" afterPath="$PROJECT_DIR$/mt/model/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" afterPath="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" />
+      <change beforePath="$PROJECT_DIR$/mt/model/test.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,70 +30,106 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mt/model/test.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="inference_post.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mt/model/inference_post.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding>
-                <element signature="e#19#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rnn_seq2seq_model.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-              <folding>
-                <element signature="e#43#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionary.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mt/dataset/dictionary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-738">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
-              <folding>
-                <element signature="e#42#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mt_dataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mt/dataset/mt_dataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-479">
-              <caret line="46" column="69" lean-forward="false" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-              <folding>
-                <element signature="e#20#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataset.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mt/data/dataset.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="134" lean-forward="false" selection-start-line="0" selection-start-column="128" selection-end-line="0" selection-end-column="134" />
+            <state relative-caret-position="306">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sequence.py" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/keras/_impl/keras/preprocessing/sequence.py">
+      <file leaf-file-name="while_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mt/modules/while_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1548">
-              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="419">
+              <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ops.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="1566" column="0" lean-forward="false" selection-start-line="1566" selection-start-column="0" selection-end-line="1566" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/array_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-41">
+              <caret line="1095" column="4" lean-forward="false" selection-start-line="1095" selection-start-column="4" selection-end-line="1095" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen_array_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gen_array_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1013">
+              <caret line="6369" column="52" lean-forward="false" selection-start-line="6369" selection-start-column="52" selection-end-line="6369" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rnn.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-213">
+              <caret line="898" column="28" lean-forward="false" selection-start-line="898" selection-start-column="24" selection-end-line="898" selection-end-column="28" />
+              <folding>
+                <element signature="e#852#890#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rnn_cell_impl.py" pinned="false" current-in-tab="true">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn_cell_impl.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="489" column="28" lean-forward="false" selection-start-line="489" selection-start-column="28" selection-end-line="489" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/layers/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3164">
+              <caret line="469" column="6" lean-forward="false" selection-start-line="469" selection-start-column="6" selection-end-line="469" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gen_math_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gen_math_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66618">
+              <caret line="3701" column="4" lean-forward="false" selection-start-line="3701" selection-start-column="4" selection-end-line="3701" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="control_flow_ops.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/control_flow_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="3068" column="7" lean-forward="false" selection-start-line="3068" selection-start-column="7" selection-end-line="3068" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -86,15 +137,80 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>!</find>
+      <find>gfile</find>
+      <find>Token</find>
+      <find>text_encoder</find>
+      <find>num_reserved_ids</find>
+      <find>store_</find>
+      <find>vocab</find>
+      <find>translateendewmt8k</find>
+      <find>translateendewmtcharacters</find>
+      <find>get_or_generate_vocab</find>
+      <find>generate_encoded_samples</find>
+      <find>feature_encoders</find>
+      <find>generate_data</find>
+      <find>get_or_generate_vocab_inner</find>
+      <find>&lt;seg id=</find>
+      <find>source_vocab_name</find>
+      <find>TokenTextEncoder</find>
+      <find>single_gpu</find>
+      <find>approx_bleu_score</find>
+      <find>2520368e</find>
+      <find>LinearOperatorTriL</find>
+      <find>tms</find>
+      <find>m</find>
+      <find>en_c</find>
+      <find>8695040</find>
+      <find>158449491</find>
+      <find>single</find>
+      <find>_transpose_batch_time</find>
+      <find>LSTM</find>
+      <find>GRU</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mt/dataset/dictionary.py" />
-        <option value="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" />
         <option value="$PROJECT_DIR$/mt/dataset/mt_dataset.py" />
+        <option value="$PROJECT_DIR$/mt/model/test.py" />
+        <option value="$PROJECT_DIR$/mt/model/challenger_en_zh_problem.py" />
+        <option value="$PROJECT_DIR$/mt/model/_challenger_en_zh_problem.py" />
+        <option value="$PROJECT_DIR$/mt/model/_translate_enzh_challenger32k.py" />
+        <option value="$PROJECT_DIR$/mt/dataset/dictionary.py" />
+        <option value="$PROJECT_DIR$/mt/dataset/tensor2tensor_dataset.py" />
+        <option value="$PROJECT_DIR$/mt/dataset/t2t_dataset.py" />
+        <option value="$PROJECT_DIR$/mt/data/ch_vocab" />
+        <option value="$PROJECT_DIR$/mt/data/en_vocab" />
+        <option value="$PROJECT_DIR$/mt/model/__init__.py" />
+        <option value="$PROJECT_DIR$/mt/model/datagen_test.py" />
+        <option value="$PROJECT_DIR$/mt/__init__.py" />
+        <option value="$PROJECT_DIR$/mt/model/translate_enzh.py" />
+        <option value="$PROJECT_DIR$/mt/data/ai_challenger_MTEnglishtoChinese_testA_20180827_en.sgm" />
+        <option value="$PROJECT_DIR$/mt/data/test.txt" />
+        <option value="$PROJECT_DIR$/mt/test/test_preprocess.py" />
+        <option value="$PROJECT_DIR$/mt/data/submit.sgm" />
+        <option value="$PROJECT_DIR$/mt/model/translate_enzh_test.py" />
+        <option value="$PROJECT_DIR$/mt/model/inference_posty.py" />
+        <option value="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" />
+        <option value="$PROJECT_DIR$/mt/dataset/data_statistics.py" />
+        <option value="$PROJECT_DIR$/mt/model/model_test.py" />
+        <option value="$PROJECT_DIR$/mt/test/data.py" />
+        <option value="$PROJECT_DIR$/mt/test/is_test.py" />
+        <option value="$PROJECT_DIR$/mt/model/inference_post.py" />
+        <option value="$PROJECT_DIR$/mt/modules/while_test.py" />
       </list>
     </option>
   </component>
@@ -135,31 +251,29 @@
               <item name="challenger_mt" type="b2602c69:ProjectViewProjectNode" />
               <item name="challenger_mt" type="462c0819:PsiDirectoryNode" />
               <item name="mt" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="challenger_mt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="challenger_mt" type="462c0819:PsiDirectoryNode" />
-              <item name="mt" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="challenger_mt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="challenger_mt" type="462c0819:PsiDirectoryNode" />
-              <item name="mt" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hmms" />
+    <property name="SearchEverywhereHistoryKey" value="Transfor&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/models/transformer.py&#10;base_single_gpu&#9;null&#9;null&#10;trainer_lib&#9;null&#9;null&#10;t2t_trainer&#9;null&#9;null&#10;transformer_base_single_gpu&#9;null&#9;null&#10;t2t&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/bin/t2t_datagen.py&#10;Enzh&#9;null&#9;null&#10;TranslateEnzhWmt8k&#9;null&#9;null&#10;text_encoder&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/data_generators/text_encoder.py&#10;text_problems&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/data_generators/text_problems.py&#10;TranslateEnde&#9;null&#9;null&#10;translateenzhwmt32k&#9;null&#9;null&#10;t2t_datagen&#9;null&#9;null&#10;translate&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/data_generators/translate_enzh.py&#10;translateendewmt32k&#9;null&#9;null&#10;Problem&#9;FILE&#9;file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/data_generators/problem_hparams.py" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mt/test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mt/output/decode" />
+      <recent name="$PROJECT_DIR$/mt/data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -173,8 +287,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rnn_seq2seq_model">
-    <configuration name="dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.while_test">
+    <configuration name="data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mt/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="challenger_mt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/test/data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="data_statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -186,31 +318,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="challenger_mt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/dataset/dictionary.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/dataset/data_statistics.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mt_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mt/dataset" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="challenger_mt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/dataset/mt_dataset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="rnn_seq2seq_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="inference_post" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -222,22 +336,62 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="challenger_mt" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/model/inference_post.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.mt_dataset" />
-      <item index="1" class="java.lang.String" itemvalue="Python.dictionary" />
-      <item index="2" class="java.lang.String" itemvalue="Python.rnn_seq2seq_model" />
+    <configuration name="is_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mt/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="challenger_mt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/test/is_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="while_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mt/modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="challenger_mt" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mt/modules/while_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.data_statistics" />
+      <item index="1" class="java.lang.String" itemvalue="Python.data" />
+      <item index="2" class="java.lang.String" itemvalue="Python.is_test" />
+      <item index="3" class="java.lang.String" itemvalue="Python.inference_post" />
+      <item index="4" class="java.lang.String" itemvalue="Python.while_test" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.rnn_seq2seq_model" />
-        <item index="1" class="java.lang.String" itemvalue="Python.mt_dataset" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dictionary" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.while_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.inference_post" />
+        <item index="2" class="java.lang.String" itemvalue="Python.is_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.data_statistics" />
       </list>
     </recent_temporary>
   </component>
@@ -257,25 +411,57 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_data_statistics_DataStatsTest - 2018.10.10 at 17h 23m 04s.xml">
+      <configuration name="Unittests for data_statistics.DataStatsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_data_statistics_DataStatsTest - 2018.10.10 at 17h 25m 11s.xml">
+      <configuration name="Unittests for data_statistics.DataStatsTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_data_statistics_py - 2018.10.10 at 17h 22m 19s.xml">
+      <configuration name="Unittests in data_statistics.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_data_statistics_py - 2018.10.10 at 17h 22m 42s.xml">
+      <configuration name="Unittests in data_statistics.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_data_statistics_py - 2018.10.10 at 17h 22m 51s.xml">
+      <configuration name="Unittests in data_statistics.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_data_statistics_py - 2018.10.10 at 17h 22m 53s.xml">
+      <configuration name="Unittests in data_statistics.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_data_statistics_py - 2018.10.10 at 18h 20m 43s.xml">
+      <configuration name="Unittests in data_statistics.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25591397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37419355" sideWeight="0.510917" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37419355" sideWeight="0.48908296" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18924731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.4978166" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -287,59 +473,369 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mt/output/decode/submit.sgm" />
+    <entry file="file://$PROJECT_DIR$/mt/output1/hparams.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="95" column="20" lean-forward="false" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/layers/common_hparams.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/utils/registry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="247" column="4" lean-forward="false" selection-start-line="247" selection-start-column="4" selection-end-line="247" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/bin/t2t_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="149" column="28" lean-forward="false" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/utils/trainer_lib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="83" column="4" lean-forward="false" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/model/datagen_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="36" lean-forward="false" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/lib/arraypad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1627">
+          <caret line="1093" column="28" lean-forward="false" selection-start-line="1093" selection-start-column="0" selection-end-line="1094" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensor2tensor/models/transformer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="1811" column="23" lean-forward="false" selection-start-line="1811" selection-start-column="23" selection-end-line="1811" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/init_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="641" column="35" lean-forward="false" selection-start-line="641" selection-start-column="35" selection-end-line="641" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="432" column="16" lean-forward="false" selection-start-line="432" selection-start-column="16" selection-end-line="432" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/embedding_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="92" column="52" lean-forward="false" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/model/translate_enzh.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/output1/decode/decode_output.sgm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5346">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mt/data/dataset.txt">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="0">
-          <caret line="0" column="134" lean-forward="false" selection-start-line="0" selection-start-column="128" selection-end-line="0" selection-end-column="134" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mt/model/test.py">
+    <entry file="file://$PROJECT_DIR$/mt/translation.zh" />
+    <entry file="file://$PROJECT_DIR$/mt/data/ai_challenger_MTEnglishtoChinese_testA_20180827_en.sgm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#19#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mt/dataset/dictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-738">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
-          <folding>
-            <element signature="e#42#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/keras/_impl/keras/preprocessing/sequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1548">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="264">
+          <caret line="7950" column="44" lean-forward="false" selection-start-line="7950" selection-start-column="37" selection-end-line="7950" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mt/dataset/mt_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-479">
-          <caret line="46" column="69" lean-forward="false" selection-start-line="46" selection-start-column="69" selection-end-line="46" selection-end-column="69" />
-          <folding>
-            <element signature="e#20#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-684">
+          <caret line="19" column="64" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/348993582/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="2811" column="8" lean-forward="false" selection-start-line="2811" selection-start-column="8" selection-end-line="2811" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/ch_corpus">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/en_vocab.zh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="595" column="22" lean-forward="false" selection-start-line="595" selection-start-column="19" selection-end-line="595" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/protocol.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/train_context.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/en_vocab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/ch_vocab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/en_corpus">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="347">
+          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/dataset/t2t_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/model/translate_enzh_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/dataset/data_statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mt/model/rnn_seq2seq_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="882">
+          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/data/train.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-4860">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/model/model_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/keras/_impl/keras/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="45" column="41" lean-forward="false" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/test/test_preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/test/data.py" />
+    <entry file="file://$PROJECT_DIR$/mt/test/is_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/output1/decode/decode_output1.sgm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gen_math_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66618">
+          <caret line="3701" column="4" lean-forward="false" selection-start-line="3701" selection-start-column="4" selection-end-line="3701" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/control_flow_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="3068" column="7" lean-forward="false" selection-start-line="3068" selection-start-column="7" selection-end-line="3068" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/model/inference_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/pywrap_tensorflow_internal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="1957" column="0" lean-forward="false" selection-start-line="1957" selection-start-column="0" selection-end-line="1957" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="1566" column="0" lean-forward="false" selection-start-line="1566" selection-start-column="0" selection-end-line="1566" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/util/nest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="146" column="33" lean-forward="false" selection-start-line="146" selection-start-column="33" selection-end-line="146" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gen_array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1013">
+          <caret line="6369" column="52" lean-forward="false" selection-start-line="6369" selection-start-column="52" selection-end-line="6369" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="898" column="28" lean-forward="false" selection-start-line="898" selection-start-column="24" selection-end-line="898" selection-end-column="28" />
           <folding>
-            <element signature="e#43#57#0" expanded="true" />
+            <element signature="e#852#890#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="1095" column="4" lean-forward="false" selection-start-line="1095" selection-start-column="4" selection-end-line="1095" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mt/modules/while_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/layers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3164">
+          <caret line="469" column="6" lean-forward="false" selection-start-line="469" selection-start-column="6" selection-end-line="469" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/rnn_cell_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="489" column="28" lean-forward="false" selection-start-line="489" selection-start-column="28" selection-end-line="489" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,2 +1,4 @@
 mt/data/
 venv/
+mt/data*
+mt/output*

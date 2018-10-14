@@ -13,7 +13,7 @@ EOS = '<eos>'
 
 
 class Vocabulary(object):
-    def __init__(self, train_path, en_vocab_size=10000, ch_vocab_size=10000, pickle_path=None):
+    def __init__(self, train_path, en_vocab_size=100000, ch_vocab_size=8000, pickle_path=None):
         self._train_path = train_path
         self._pickle_path = pickle_path
         if self._train_path is None or not os.path.exists(self._train_path):

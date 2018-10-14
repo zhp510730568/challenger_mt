@@ -38,19 +38,19 @@ class MTDataset(object):
             return
         if sess is None or (not isinstance(sess, Session)):
             raise ValueError('sess type is not correct')
+        file_dataset = tf.data.TextLineDataset(self._preprocess_path)
+        self.file_dataset = file_dataset.shuffle(buffer_size=100) \
+            .repeat() \
+            .map(map_func=lambda sentence: tf.py_func(map_fn, [sentence], [tf.int32, tf.int32]), num_parallel_calls=6) \
+            .batch(self._batch_size) \
+            .prefetch(buffer_size=self._batch_size * 10)
+        self.init_op = self.file_dataset.make_initializable_iterator(shared_name='train_dataset')
         sess.run(self.init_op.initializer)
         self._is_init=True
 
     def get_batch_op(self):
         if not self._is_init:
             raise ValueError('init must be called first')
-        file_dataset = tf.data.TextLineDataset(self._preprocess_path)
-        file_dataset = file_dataset.shuffle(buffer_size=100) \
-            .repeat() \
-            .map(map_func=lambda sentence: tf.py_func(map_fn, [sentence], [tf.int32, tf.int32]), num_parallel_calls=6) \
-            .batch(self._batch_size) \
-            .prefetch(buffer_size=self._batch_size * 10)
-        self.init_op = file_dataset.make_initializable_iterator(shared_name='train_dataset')
 
         ch_batch, en_batch = self.init_op.get_next()
 
@@ -87,12 +87,12 @@ if __name__=='__main__':
     dataset_path = '../data/train.txt'
     preprocess_path='../data/dataset.txt'
     pickle_path = '../pkl/tokens.pkl'
-    dataset = MTDataset(dataset_path, 128, preprocess_path, en_vocab_size=50000, ch_vocab_size=8000, pickle_path=pickle_path)
-    ch_batch, en_batch=dataset.get_batch_op()
-    print('call end')
 
     with Session() as sess:
+        dataset = MTDataset(dataset_path, 128, preprocess_path, en_vocab_size=50000, ch_vocab_size=8000, pickle_path=pickle_path)
         dataset.init(sess=sess)
+        ch_batch, en_batch=dataset.get_batch_op()
+
         sess.run(tf.global_variables_initializer())
         start_time = time.time()
         for _ in range(1):
