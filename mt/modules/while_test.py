@@ -23,5 +23,5 @@ splits = array_ops.split(
         value=range, num_or_size_splits=2, axis=1)
 
 with tf.Session() as sess:
-    print('source data: ', sess.run(range))
+    print('source data1: ', sess.run(range))
     print('split: ', sess.run(splits))

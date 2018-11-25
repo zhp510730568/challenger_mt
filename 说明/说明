@@ -1,0 +1,29 @@
+模型文件：
+checkpoint: https://pan.baidu.com/s/1CrJ03b-U9Yfs_EzKk02U4A
+提取码：jhyg
+
+（1）代码运行的环境配置（编程语言，深度学习框架，调用的库等等）
+语言: python
+深度学习框架：tensorflow 
+调用的库：tensor2tensor
+
+（2）训练代码的使用说明
+	1) 生成原始源和目标数据
+	python t2t_dataset.py
+	2) 生成训练数据集
+	export DATA_DIR=../data
+	   export TMP_DIR=/tmp/mt/
+	   export PROBLEM=translate_enzh_token
+	t2t-datagen \
+	  --data_dir=$DATA_DIR \
+	  --tmp_dir=$TMP_DIR \
+	  --problem=$PROBLEM
+
+（3）训练
+t2t-trainer  --data_dir=./data  --t2t_usr_dir=./  --problem=translate_enzh_token  --model=transformer  --hparams_set=transformer_base_single_gpu  --output_dir=./output3/ --job-dir=./output3/ --train_steps=2000000 --hparams='batch_size=6000,max_length=100' --save_checkpoints_secs=3600 --schedule=train
+
+（4）推断
+t2t-decoder   --t2t_usr_dir=./   --data_dir=./data   --problem=translate_enzh_token   --model=transformer  --hparams_set=transformer_base_single_gpu   --output_dir=./output3   --decode_hparams="beam_size=6,alpha=0.6"   --decode_from_file=./data/testB_.txt   --decode_to_file=translationB_.zh
+
+（5）结果处理
+inference_post.py

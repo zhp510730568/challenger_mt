@@ -8,8 +8,8 @@ import tensorflow as tf
 root_path='../data1'
 file_name='train.txt'
 
-en_corpus_name='en_corpus_c'
-ch_corpus_name='ch_corpus_c'
+en_corpus_name='en_corpus'
+ch_corpus_name='ch_corpus'
 en_vocab_name='en_vocab'
 ch_vocab_name='ch_vocab'
 
@@ -48,8 +48,8 @@ class T2TDataset():
                         ch_sentence = arr[3]
                         en_tokens = nltk.word_tokenize(en_sentence)
                         ch_tokens = [token for token in ch_sentence]
-                        en_file.write('%s\n' % (' '.join(en_tokens)).lower())
-                        ch_file.write('%s\n' % (' '.join(ch_tokens)).lower())
+                        en_file.write('%s\n' % (' '.join(en_tokens)))
+                        ch_file.write('%s\n' % (' '.join(ch_tokens)))
                         count += 1
                         if count % 100000 == 0:
                             print('current process count: %d' % (count))

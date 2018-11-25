@@ -71,7 +71,7 @@ class MTDataset(object):
                 info = {'DocID': DocID, 'SenID': SenID, 'EngSen': en_ids, 'ChnSen': ch_ids}
                 dataset_file.write('%s\n' % (json.dumps(info)))
                 if count % 100000 == 0:
-                    print('processed data: %d\t%s' % (
+                    print('processed data1: %d\t%s' % (
                     count, time.strftime('%Y.%m.%d %H:%M:%S', time.localtime(time.time()))))
 
 
@@ -84,8 +84,8 @@ def map_fn(sentence):
 
 
 if __name__=='__main__':
-    dataset_path = '../data/train.txt'
-    preprocess_path='../data/dataset.txt'
+    dataset_path = '../data1/train.txt'
+    preprocess_path='../data1/dataset.txt'
     pickle_path = '../pkl/tokens.pkl'
 
     with Session() as sess:

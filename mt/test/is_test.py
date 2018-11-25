@@ -1,15 +1,16 @@
 import numpy as np
+import tensorflow as tf
 
-draw_num = 10000000
-uniform_draws = np.random.uniform(0, 1, draw_num)
+global_step = tf.get_variable(name="global_step", dtype=tf.int64, shape=(), trainable=False, initializer=tf.zeros_initializer)
+assign_op = tf.assign(global_step, 20)
+with tf.control_dependencies([assign_op]):
+    decalyed_learning_rate = tf.train.polynomial_decay(learning_rate=0.1, global_step=global_step, decay_steps=20)
 
-X = uniform_draws + 2
+is_warmup = tf.cast(10 < 100, tf.float32)
 
-
-def f_x(x):
-    return np.power(x, 3)
-
-
-result = (3 - 2) / draw_num * np.sum(f_x(X))
-print('approx value: ', result)
-print('real value: ', float(65 / 4))
+with tf.Session() as sess:
+    sess.run(tf.global_variables_initializer())
+    print(sess.run(global_step))
+    print(sess.run(decalyed_learning_rate))
+    print(sess.run(global_step))
+    print(sess.run(is_warmup))

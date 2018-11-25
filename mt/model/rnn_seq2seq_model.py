@@ -14,8 +14,8 @@ HIDDEN_SIZE=256
 
 batch_size=256
 
-dataset_path = '../data/train.txt'
-preprocess_path = '../data/dataset.txt'
+dataset_path = '../data1/train.txt'
+preprocess_path = '../data1/dataset.txt'
 pickle_path = '../pkl/tokens.pkl'
 
 device_spec = tf.DeviceSpec(device_type='CPU', device_index=0)

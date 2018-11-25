@@ -8,7 +8,7 @@ import nltk
 
 from collections import Counter
 
-root_path = '../data'
+root_path = '../data1'
 en_corpus = 'test.txt'
 
 

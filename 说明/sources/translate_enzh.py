@@ -13,8 +13,6 @@ from tensor2tensor.data_generators import generator_utils
 from tensor2tensor.data_generators import translate
 from tensor2tensor.utils import registry
 
-root_path='/home/zhangpengpeng/PycharmProjects/challenger_mt/mt/data1'
-
 UNK='<UNK>'
 
 
@@ -105,6 +103,7 @@ class TranslateEnzhToken(translate.TranslateProblem):
 
 
 if __name__=='__main__':
+    root_path='/home/zhangpengpeng/PycharmProjects/challenger_mt/mt/data1'
     source_vocab = text_encoder.TokenTextEncoder(os.path.join(root_path, 'en_vocab'), num_reserved_ids=2, replace_oov=UNK)
     target_vocab = text_encoder.TokenTextEncoder(os.path.join(root_path, 'ch_vocab'), num_reserved_ids=2, replace_oov=UNK)
     encoded = text_problems.text2text_generate_encoded(

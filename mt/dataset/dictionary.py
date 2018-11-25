@@ -17,7 +17,7 @@ class Vocabulary(object):
         self._train_path = train_path
         self._pickle_path = pickle_path
         if self._train_path is None or not os.path.exists(self._train_path):
-            raise ValueError("train data path is None or don't exist")
+            raise ValueError("train data1 path is None or don't exist")
 
         if self._pickle_path is None:
             raise ValueError('pickle path is None')
@@ -170,13 +170,13 @@ class Vocabulary(object):
 
 if __name__ == '__main__':
     import time
-    train_path = '../data/train.txt'
+    train_path = '../data1/train.txt'
     pickle_path = '../pkl/tokens.pkl'
     vocab = Vocabulary(train_path=train_path, en_vocab_size=50000, ch_vocab_size=8000, pickle_path=pickle_path)
     start_time=time.time()
     count = 0
 
-    with open(train_path, 'r') as train_file, open('../data/dataset.txt', 'w') as dataset_file:
+    with open(train_path, 'r') as train_file, open('../data1/dataset.txt', 'w') as dataset_file:
         for sentence in open(train_path):
             arr = sentence.strip().split('\t')
             DocID=arr[0]
@@ -193,4 +193,4 @@ if __name__ == '__main__':
             info = {'DocID': DocID, 'SenID': SenID, 'EngSen': en_ids, 'ChnSen': ch_ids}
             dataset_file.write('%s\n' % (json.dumps(info)))
             if count % 100000 == 0:
-                print('processed data: %d\t%s' % (count, time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time()))))
+                print('processed data1: %d\t%s' % (count, time.strftime('%Y.%m.%d %H:%M:%S',time.localtime(time.time()))))

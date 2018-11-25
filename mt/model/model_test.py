@@ -2,7 +2,7 @@ import os
 import tensorflow as tf
 
 
-data_path = '../data/train.txt'
+data_path = '../data1/train.txt'
 base_path = '/home/zhangpengpeng/t2t_train/challenger_mt/'
 
 
@@ -50,4 +50,4 @@ def split_dataset():
 
 
 if __name__=='__main__':
-    tf.keras.layers.Conv1D
+    tf.orthogonal_initializer

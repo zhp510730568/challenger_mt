@@ -4,7 +4,7 @@ import numpy as np
 
 import tensorflow as tf
 
-root_path = '../output3/'
+root_path = '../data1/'
 decode_name = 'translationB_.zh'
 
 
